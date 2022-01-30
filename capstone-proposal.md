@@ -19,7 +19,7 @@
 ## Tools, frameworks, libraries, APIs, and other/resources that will be used for the project
 
 * React/Redux
-* Firebase /NoSql
+* Firestore/NoSql
 
 ## If I finish developing the MVP with time to spare, I would like to try some of the following:
 
