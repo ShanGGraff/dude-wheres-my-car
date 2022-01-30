@@ -13,6 +13,7 @@
 * Form for adding a possible stolen vehicle. This should include a description, model, picture, license plate number, date vehicle was sighted, and the general location the vehicle was when it was sighted.
 * Authentication (user sign-in)
 * More than barebones styling and layout (I want it to look nice)
+* Will need to be able to delete and edit car entries
 * I feel like I'm missing something...
 
 ## Tools, frameworks, libraries, APIs, and other/resources that will be used for the project
