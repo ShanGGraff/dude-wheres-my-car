@@ -9,8 +9,8 @@
 ------------
 ## Absolute minimum features the project requires to meet this purpose.
 
-* Form for reporting a missing car. This should include a description, model, picture, license plate number, date vehicle went missing, and the general location the vehicle was when it was stolen. Might also include if an award is being offered for the information. (This probably makes more sense if this site was about lost pets)
-* Form for adding a possible stolen vehicle. This should include a description, model, picture, license plate number, date vehicle was sighted, and the general location the vehicle was when it was sighted.
+* Form for reporting a missing car. This should include a description, make-model, color, picture, license plate number, VIN, date vehicle went missing, and the general location the vehicle was when it was stolen. Might also include if an award is being offered for the information. (This probably makes more sense if this site was about lost pets)
+* Form for adding a possible stolen vehicle. This should include a description, make-model, color, picture, license plate number, VIN, date vehicle was sighted, and the general location the vehicle was when it was sighted.
 * Authentication (user sign-in)
 * More than barebones styling and layout (I want it to look nice)
 * Will need to be able to delete and edit car entries
@@ -20,6 +20,7 @@
 
 * React/Redux
 * Firestore/NoSql
+* Look into Reactfire
 
 ## If I finish developing the MVP with time to spare, I would like to try some of the following:
 
