@@ -61,3 +61,6 @@ Copyright (c) 2022 Creators
 
 ##### Sunday, 01/30
 * 7:00am-7:45am : Finish first full draft of the capstone-proposal.md
+
+##### Thursday, 2/10/2022
+* 10:00-10:30 : Create firebase database for project. Read up on the different authentication types
