@@ -64,3 +64,5 @@ Copyright (c) 2022 Creators
 
 ##### Thursday, 2/10/2022
 * 10:00-10:30 : Create firebase database for project. Read up on the different authentication types
+
+* 11:00-12:00 : Researching and trying to figure out firestore app issue. Probably a conflicting depency (version)
