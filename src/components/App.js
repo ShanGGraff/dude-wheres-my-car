@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import car from '../img/StolenCar.jpg';
 
 function App(){
   return (
     <React.Fragment>
-      <h1>Help Queue</h1>
-      <h3>3a</h3>
-      <h3>Thato and Haley</h3>
-      <p><em>Firebase entries not saving!</em></p>
+      <h1>Dude Where Is My Car</h1>
+      <div>
+        <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
+      </div>
       <hr/>
     </React.Fragment>
   );

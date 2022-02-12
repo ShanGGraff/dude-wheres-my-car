@@ -66,3 +66,6 @@ Copyright (c) 2022 Creators
 * 10:00-10:30 : Create firebase database for project. Read up on the different authentication types
 
 * 11:00-12:00 : Researching and trying to figure out firestore app issue. Probably a conflicting depency (version)
+
+##### Saturday, 2/12/2022
+* 6:45- : Researching different layouts. How to change header when signed-in as opposed to when signed out.
