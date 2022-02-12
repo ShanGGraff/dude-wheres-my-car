@@ -68,4 +68,5 @@ Copyright (c) 2022 Creators
 * 11:00-12:00 : Researching and trying to figure out firestore app issue. Probably a conflicting depency (version)
 
 ##### Saturday, 2/12/2022
-* 6:45- 7:45 : Researching different layouts. How to change header when signed-in as opposed to when signed out.
+* 6:45-7:45 : Researching different layouts. How to change header when signed-in as opposed to when signed out.
+* 9:20-10:20 Using https://www.draw.io to layout components. Looking at other websites for design ideas.
