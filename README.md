@@ -73,4 +73,4 @@ Copyright (c) 2022 Creators
 * 9:20-10:20 Using https://www.draw.io to layout components. Looking at other websites for design ideas.
 
 ##### Sunday, 2/13/2022
-* 8:00- : 
+* 8:00-8:30 : Add ResuableForm.js and input values. 
