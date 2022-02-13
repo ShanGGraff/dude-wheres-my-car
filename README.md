@@ -33,6 +33,8 @@
 ---------------------------
 
 ## DWMC Layout<a id="layout"></a>
+![DWMC Component Layout](./src/img/DudeWheresMyCar.drawio.png)
+
 
 ----------------------------
 
