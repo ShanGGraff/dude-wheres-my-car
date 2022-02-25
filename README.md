@@ -65,12 +65,15 @@ Copyright (c) 2022 Creators
 * 7:00am-7:45am : Finish first full draft of the capstone-proposal.md
 
 ##### Thursday, 2/10/2022
-* 10:00-10:30 : Create firebase database for project. Read up on the different authentication types
+* 10:00-10:30 : Create Firebase database for project. Read up on the different authentication types
 * 11:00-12:00 : Researching and trying to figure out firestore app issue. Probably a conflicting depency (version)
 
 ##### Saturday, 2/12/2022
-* 6:45-7:45 : Researching different layouts. How to change header when signed-in as opposed to when signed out.
+* 6:45-7:45 : Researching different layouts and how to change header when signed-in as opposed to when signed out.
 * 9:20-10:20 Using https://www.draw.io to layout components. Looking at other websites for design ideas.
 
 ##### Sunday, 2/13/2022
 * 8:00-8:30 : Add ResuableForm.js and input values. 
+
+##### Friday, 2/25/2022
+* 10:45-12:00 : Going through header tutorials: https://betterprogramming.pub/building-a-basic-header-with-materialui-and-react-js-d650f75b4b0a. Had some dependency issures.
