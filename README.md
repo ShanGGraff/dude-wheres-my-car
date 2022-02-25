@@ -76,4 +76,6 @@ Copyright (c) 2022 Creators
 * 8:00-8:30 : Add ResuableForm.js and input values. 
 
 ##### Friday, 2/25/2022
-* 10:45-12:00 : Going through header tutorials: https://betterprogramming.pub/building-a-basic-header-with-materialui-and-react-js-d650f75b4b0a. Had some dependency issures.
+* 10:45-12:00 : Going through header tutorials: https://betterprogramming.pub/building-a-basic-header-with-materialui-and-react-js-d650f75b4b0a. Had some dependency issues.
+
+* 12:30-2:00, 2/25/2022 : Working on footer. Need to figure out how the main element reacts with the header and footer. Trying to figure out how to change the header color to match the footer color. 

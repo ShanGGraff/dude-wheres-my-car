@@ -4,32 +4,20 @@ import car from '../img/StolenCar.jpg';
 import ReactDOM from "react-dom";
 // import App from "./App";
 import Header from "./Header";
+import Footer from "./Footer";
 
 
 function App(){
   return (
     <React.Fragment>
-      {/* <h1>Dude Where Is My Car</h1> */}
       <Header/>
-      <div>
+      {/* <div>
         <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
       </div>
-      <hr/>
+      <hr/>  */}
+      <Footer />
     </React.Fragment>
   );
 }
-
-// ReactDOM.render(
-//   <React.Fragment>
-//     <Router>
-//       <App>
-//       <div>
-//         <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
-//       </div>
-//       </App>
-//     </Router>
-//   </React.Fragment>,
-//   document.getElementById("root")
-// );
 
 export default App;
