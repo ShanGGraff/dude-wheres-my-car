@@ -31,7 +31,7 @@ export default function Header() {
   
           <Typography variant="h6" 
             component="div" sx={{ flexGrow: 1 }}>
-            GeeksforGeeks Header
+            Dude Where's My Car?
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>

@@ -9,7 +9,8 @@ import Header from "./Header";
 function App(){
   return (
     <React.Fragment>
-      <h1>Dude Where Is My Car</h1>
+      {/* <h1>Dude Where Is My Car</h1> */}
+      <Header/>
       <div>
         <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
       </div>
