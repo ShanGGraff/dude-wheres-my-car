@@ -15,8 +15,14 @@ function App(){
         <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
       </div>
       <hr/>  */}
+      <main>
+        <div>
+          <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
+        </div>
+      </main>
       <Footer />
     </React.Fragment>
+    
   );
 }
 
