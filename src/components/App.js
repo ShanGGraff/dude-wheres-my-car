@@ -7,7 +7,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Main from "./Main";
 
-
 function App(){
   return (
     <React.Fragment>
@@ -15,7 +14,6 @@ function App(){
       <Main/>
       <Footer/>
     </React.Fragment>
-    
   );
 }
 
