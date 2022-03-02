@@ -29,4 +29,14 @@
 * 12:20-12:50 : Broke main out into its own component. Still having issues with the footer not staying at the bottom of the page. 
 
 ##### Sunday, 2/27/2022
-* 8:00- : Yesterday figured out how to make the footer stick. Looking into how to have the image in Main.js resize with the page.
+* 8:00-9:00 : Yesterday figured out how to make the footer stick. Looking into how to have the image in Main.js resize with the page.
+* Class: Figuring out layout. Researching materialui more. Issue with Fireb ase.
+
+##### Monday, 2/28/2022
+* Researching side scrolling. Tutorials on emdedding forms into a photo.
+
+##### Tuesday, 3/1/2022
+* Researching Hooks and changing headers and footers when authenticated. Realize I just need to get the basic functionality in the website working. 
+
+#### Wedsday, 3/2/2022
+10:00- 12:00 : StolenCarForm (adding hooks). Need to add reducers. Going back through NoSql Epicodus curriculum. Need to get everything basically working before concentrating on styling, etc.
