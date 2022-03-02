@@ -1,22 +1,131 @@
 import React from "react";
 import CarDetail from "./CarDetail";
 import CarList from "./CarList";
-import Edit from "./EditTicketForm";
+import Editls from "./EditTicketForm";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import * as a from "./../actions";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 
-class CarControl extends React.Component {
+class TicketControl extends React.Component {
+
   constructor(props) {
     super(props);
     this.state = {
-
+      selectedTicket: null,
+      editing: false
     };
   }
 
-  render() {
+  componentDidMount() {
+    this.waitTimeUpdateTimer = setInterval(() =>
+      this.updateTicketElapsedWaitTime(),
+    60000
+    );
+  }
 
+  componentWillUnmount(){
+    clearInterval(this.waitTimeUpdateTimer);
+  }
+
+  updateTicketElapsedWaitTime = () => {
+    const { dispatch } = this.props;
+    Object.values(this.props.mainCarList).forEach(car => {
+      const newFormattedWaitTime = car.timeOpen.fromNow(true);
+      const action = a.updateTime(car.id, newFormattedWaitTime);
+      dispatch(action);
+    });
+  }
+
+  handleClick = () => {
+    if (this.state.selectedCar != null) {
+      this.setState({
+        selectedCar: null,
+        editing: false
+      });
+    } else {
+      const { dispatch } = this.props;
+      const action = a.toggleCar();
+      dispatch(action);
+    }
+  }
+
+  handleAddingNewCarToList = (newCar) => {
+    const { dispatch } = this.props;
+    const action = a.addCar(newCar)
+    dispatch(action);
+    const action2 = a.toggleCar();
+    dispatch(action2);
+  }
+
+  handleChangingSelectedCar = (id) => {
+    const selectedCar = this.props.mainCarList[id];
+    this.setState({selectedCar: selectedCar});
+  }
+
+  handleEditClick = () => {
+    this.setState({editing: true});
+  }
+
+  handleEditingCarInList = (carToEdit) => {
+    const { dispatch } = this.props;
+    const action = a.addCar(carToEdit);
+    dispatch(action);
+    this.setState({
+      editing: false,
+      selectedCar: null
+    });
+  }
+
+  handleDeletingCar = (id) => {
+    const { dispatch } = this.props;
+    const action = a.deleteCar(id);
+    dispatch(action);
+    this.setState({selectedCar: null});
+  }
+
+  render(){
+    let currentlyVisibleState = null;
+    let buttonText = null;
+    if (this.state.editing ) {      
+      currentlyVisibleState = <EditCodeForm car = {this.state.selectedCar} onEditCar = {this.handleEditingCarInList} />
+      buttonText = "Return to Car List";
+    } else if (this.state.selectedCar != null) {
+      currentlyVisibleState = 
+      <CarDetail 
+        car = {this.state.selectedCar} 
+        onClickingDelete = {this.handleDeletingCar} 
+        onClickingEdit = {this.handleEditClick} />
+      buttonText = "Return to Car List";
+    } else if (this.props.formVisibleOnPage) {
+      currentlyVisibleState = <NewCarForm onNewCarCreation={this.handleAddingNewCarToList}  />;
+      buttonText = "Return to Car List";
+    } else {
+      currentlyVisibleState = <CarList carList={this.props.mainCarList} onCarSelection={this.handleChangingSelectedCar} />;
+      buttonText = "Add Car";
+    }
+    return (
+      <React.Fragment>
+        {currentlyVisibleState}
+        <button onClick={this.handleClick}>{buttonText}</button>
+      </React.Fragment>
+    );
+  }
+
+}
+
+TicketControl.propTypes = {
+  mainTicketList: PropTypes.object
+};
+
+const mapStateToProps = state => {
+  return {
+    mainCarList: state.mainCarList,
+    formVisibleOnPage: state.formVisibleOnPage
   }
 }
+
+TicketControl = connect(mapStateToProps)(TicketControl);
+
+export default TicketControl;
