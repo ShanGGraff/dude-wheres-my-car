@@ -8,7 +8,7 @@ import * as a from "./../actions";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 
-class TicketControl extends React.Component {
+class CarControl extends React.Component {
 
   constructor(props) {
     super(props);
@@ -115,8 +115,8 @@ class TicketControl extends React.Component {
 
 }
 
-TicketControl.propTypes = {
-  mainTicketList: PropTypes.object
+CarControl.propTypes = {
+  mainCarList: PropTypes.object
 };
 
 const mapStateToProps = state => {
@@ -126,6 +126,6 @@ const mapStateToProps = state => {
   }
 }
 
-TicketControl = connect(mapStateToProps)(TicketControl);
+CarControl = connect(mapStateToProps)(CarControl);
 
-export default TicketControl;
+export default CarControl;
