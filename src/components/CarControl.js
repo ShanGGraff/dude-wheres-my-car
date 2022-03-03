@@ -44,7 +44,7 @@ class CarControl extends React.Component {
       });
     } else {
       const { dispatch } = this.props;
-      const action = a.toggleCar();
+      const action = a.toggleForm();
       dispatch(action);
     }
   }
@@ -53,7 +53,7 @@ class CarControl extends React.Component {
     const { dispatch } = this.props;
     const action = a.addCar(newCar)
     dispatch(action);
-    const action2 = a.toggleCar();
+    const action2 = a.toggleForm();
     dispatch(action2);
   }
 

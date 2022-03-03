@@ -41,4 +41,4 @@
 #### Wedsday, 3/2/2022
 10:00- 12:00 : StolenCarForm (adding hooks). Need to add reducers. Going back through NoSql Epicodus curriculum. Need to get everything basically working before concentrating on styling, etc.
 
-* Class : 
+* Class : EditCarForm. 
