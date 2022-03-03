@@ -21,7 +21,6 @@ export const addCar = (car) => {
     carImage: carImage,
     date: date,
     location: location,
-    issue: issue,
     id: id,
     formattedWaitTime,
     timeOpen: timeOpen
