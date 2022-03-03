@@ -4,6 +4,8 @@ import CarList from "./CarList";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import * as a from "./../actions";
+import EditCarForm from './EditCarForm';
+import StolenCarForm from './StolenCarForm';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class CarControl extends React.Component {
@@ -87,7 +89,7 @@ class CarControl extends React.Component {
     let currentlyVisibleState = null;
     let buttonText = null;
     if (this.state.editing ) {      
-      currentlyVisibleState = <EditCodeForm car = {this.state.selectedCar} onEditCar = {this.handleEditingCarInList} />
+      currentlyVisibleState = <EditCarForm car = {this.state.selectedCar} onEditCar = {this.handleEditingCarInList} />
       buttonText = "Return to Car List";
     } else if (this.state.selectedCar != null) {
       currentlyVisibleState = 
@@ -97,7 +99,7 @@ class CarControl extends React.Component {
         onClickingEdit = {this.handleEditClick} />
       buttonText = "Return to Car List";
     } else if (this.props.formVisibleOnPage) {
-      currentlyVisibleState = <NewCarForm onNewCarCreation={this.handleAddingNewCarToList}  />;
+      currentlyVisibleState = <StolenCarForm onNewCarCreation={this.handleAddingNewCarToList}  />;
       buttonText = "Return to Car List";
     } else {
       currentlyVisibleState = <CarList carList={this.props.mainCarList} onCarSelection={this.handleChangingSelectedCar} />;
