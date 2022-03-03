@@ -1,12 +1,10 @@
 import React from "react";
 import CarDetail from "./CarDetail";
 import CarList from "./CarList";
-import Editls from "./EditTicketForm";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import * as a from "./../actions";
 import { withFirestore, isLoaded } from 'react-redux-firebase';
-
 
 class CarControl extends React.Component {
 
