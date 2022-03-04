@@ -17,7 +17,7 @@ function CarDetail(props){
 }
 
 CarDetail.propTypes = {
-  ticket: PropTypes.object,
+  cat: PropTypes.object,
   onClickingDelete: PropTypes.func,
   onClickingEdit: PropTypes.func
 };
