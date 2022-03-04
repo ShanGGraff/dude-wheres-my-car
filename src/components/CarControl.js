@@ -6,21 +6,21 @@ import PropTypes from "prop-types";
 import * as a from "./../actions";
 import EditCarForm from './EditCarForm';
 import StolenCarForm from './StolenCarForm';
-import { withFirestore, isLoaded } from 'react-redux-firebase';
+// import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class CarControl extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      selectedTicket: null,
+      selectedCar: null,
       editing: false
     };
   }
 
   componentDidMount() {
     this.waitTimeUpdateTimer = setInterval(() =>
-      this.updateTicketElapsedWaitTime(),
+      this.updateCarElapsedWaitTime(),
     60000
     );
   }
@@ -29,7 +29,7 @@ class CarControl extends React.Component {
     clearInterval(this.waitTimeUpdateTimer);
   }
 
-  updateTicketElapsedWaitTime = () => {
+  updateCarElapsedWaitTime = () => {
     const { dispatch } = this.props;
     Object.values(this.props.mainCarList).forEach(car => {
       const newFormattedWaitTime = car.timeOpen.fromNow(true);
