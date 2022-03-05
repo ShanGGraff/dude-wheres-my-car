@@ -44,4 +44,4 @@
 * Class : EditCarForm. Rest in commits
 
 #### Saturday, 3/5/2022
-9:30: Trying to fix TypeError: Cannot destructure property error. Researching
+9:30: 10:30 Trying to fix TypeError: Cannot destructure property error. Researching. Now working on a different issue with EditCarForm.
