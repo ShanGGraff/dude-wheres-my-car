@@ -38,7 +38,10 @@
 ##### Tuesday, 3/1/2022
 * Researching Hooks and changing headers and footers when authenticated. Realize I just need to get the basic functionality in the website working. 
 
-#### Wedsday, 3/2/2022
+#### Wednesday, 3/2/2022
 10:00- 12:00 : StolenCarForm (adding hooks). Need to add reducers. Going back through NoSql Epicodus curriculum. Need to get everything basically working before concentrating on styling, etc.
 
-* Class : EditCarForm. 
+* Class : EditCarForm. Rest in commits
+
+#### Saturday, 3/5/2022
+9:30: Trying to fix TypeError: Cannot destructure property error. Researching

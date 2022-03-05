@@ -10,7 +10,7 @@ export const toggleForm = () => ({
 });
 
 export const addCar = (car) => {
-  const { make, model, year, vin, license, carImage, date, location, id, formattedWaitTime, timeOpen } = car;
+  const { make, model, year, vin, license, date, location, id, formattedWaitTime, timeOpen } = car;
   return {
     type: c.ADD_CAR,
     make: make,
@@ -18,7 +18,7 @@ export const addCar = (car) => {
     year: year,
     vin: vin,
     license: license,
-    carImage: carImage,
+    // carImage: carImage,
     date: date,
     location: location,
     id: id,
