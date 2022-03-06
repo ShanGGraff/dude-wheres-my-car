@@ -21,7 +21,7 @@ Car.propTypes = {
   // carimage: PropTypes.
   location: PropTypes.string,
   id: PropTypes.string,
-  formattedWaitTime: PropTypes.string,
+  // formattedWaitTime: PropTypes.string,
   whenTicketClicked: PropTypes.func
 };
 
