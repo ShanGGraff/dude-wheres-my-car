@@ -49,3 +49,4 @@
 #### Sunday, 3/6/2022
 9:00: 9:50 Error trying to write to firebase. Trying to find the bug. FirebaseError: Function addDoc() called with invalid data. Unsupported field value: a custom HTMLInputElement object (found in field model in document
 
+12:00: 1:00 Trying to get Routes and Route working with app.js. Reading tutorials on the subject.
