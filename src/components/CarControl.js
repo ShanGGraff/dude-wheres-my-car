@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import * as a from "./../actions";
 import EditCarForm from './EditCarForm';
 import StolenCarForm from './StolenCarForm';
-// import { withFirestore, isLoaded } from 'react-redux-firebase';
+import { withFirestore } from 'react-redux-firebase';
 
 class CarControl extends React.Component {
 
@@ -58,8 +58,20 @@ class CarControl extends React.Component {
   }
 
   handleChangingSelectedCar = (id) => {
-    const selectedCar = this.props.mainCarList[id];
-    this.setState({selectedCar: selectedCar});
+    this.props.firestore.get({collection: 'cars', doc: id}).then((car) => {
+      const firestoreCar = {
+        make: car.get("make"),
+        model: car.get("model"),
+        year: car.get("year"),
+        vin: car.get("vin"),
+        license: car.get("license"),
+        // carimage: car.get("carimage"),
+        date: car.get("date"),
+        location: car.get("location"),
+        id: car.id
+      }
+      this.setState({selectedCar: firestoreCar });
+    });
   }
 
   handleEditClick = () => {
@@ -126,4 +138,4 @@ const mapStateToProps = state => {
 
 CarControl = connect(mapStateToProps)(CarControl);
 
-export default CarControl;
+export default withFirestore(CarControl);
