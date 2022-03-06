@@ -78,7 +78,7 @@ class CarControl extends React.Component {
     this.setState({editing: true});
   }
 
-  handleEditingTicketInList = () => {
+  handleEditingCartInList = () => {
     this.setState({
       editing: false,
       selectedTicket: null
@@ -86,9 +86,7 @@ class CarControl extends React.Component {
   }
 
   handleDeletingCar = (id) => {
-    const { dispatch } = this.props;
-    const action = a.deleteCar(id);
-    dispatch(action);
+    this.props.firestore.delete({collection: 'cars', doc: id});
     this.setState({selectedCar: null});
   }
 
@@ -123,7 +121,8 @@ class CarControl extends React.Component {
 }
 
 CarControl.propTypes = {
-  mainCarList: PropTypes.object
+  mainCarList: PropTypes.object,
+  formVisibleOnPage: PropTypes.bool
 };
 
 const mapStateToProps = state => {
