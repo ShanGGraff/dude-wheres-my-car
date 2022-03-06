@@ -12,13 +12,13 @@ function EditCarForm (props) {
     props.onEditCar();
     const propertiesToUpdate = {
       make: event.target.make.value, 
-      model: event.target.location.model, 
+      model: event.target.model.value, 
       year: event.target.year.value, 
       // timeOpen: car.timeOpen, 
       vin: event.target.vin.value, 
       license: event.target.license.value,
       // carimage: event.target.carimage,
-      date: event.target.date,
+      date: event.target.date.value,
       location: event.target.location.value
       // target: event.target.date.value, location: event.target.location.value, formattedWaitTime: car.formattedWaitTime, id: car.id
     }

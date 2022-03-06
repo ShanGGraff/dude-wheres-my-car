@@ -78,7 +78,7 @@ class CarControl extends React.Component {
     this.setState({editing: true});
   }
 
-  handleEditingCartInList = () => {
+  handleEditingCarInList = () => {
     this.setState({
       editing: false,
       selectedTicket: null
