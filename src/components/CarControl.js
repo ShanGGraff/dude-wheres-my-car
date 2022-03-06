@@ -78,15 +78,12 @@ class CarControl extends React.Component {
     this.setState({editing: true});
   }
 
-  // handleEditingCarInList = (carToEdit) => {
-  //   const { dispatch } = this.props;
-  //   const action = a.addCar(carToEdit);
-  //   dispatch(action);
-  //   this.setState({
-  //     editing: false,
-  //     selectedCar: null
-  //   });
-  // }
+  handleEditingTicketInList = () => {
+    this.setState({
+      editing: false,
+      selectedTicket: null
+    });
+  }
 
   handleDeletingCar = (id) => {
     const { dispatch } = this.props;

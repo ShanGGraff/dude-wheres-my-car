@@ -1,13 +1,19 @@
 import React from "react";
 import ReusableForm from "./ReusableForm";
 import PropTypes from "prop-types";
+import { useFirestore } from 'react-redux-firebase';
 
 function EditCarForm (props) {
+  const firestore = useFirestore();
   const { car } = props;
 
   function handleEditCarFormSubmission(event) {
     event.preventDefault();
-    props.onEditCar({make: event.target.make.value, model: event.target.location.model, year: event.target.year.value, timeOpen: car.timeOpen, vin: event.target.vin.value, license: event.target.license.value, target: event.target.date.value, location: event.target.location.value, formattedWaitTime: car.formattedWaitTime, id: car.id});
+    props.onEditCar();
+    const propertiesToUpdate = { 
+      make: event.target.make.value, model: event.target.location.model, year: event.target.year.value, timeOpen: car.timeOpen, vin: event.target.vin.value, license: event.target.license.value, target: event.target.date.value, location: event.target.location.value, formattedWaitTime: car.formattedWaitTime, id: car.id
+    }
+    return firestore.update({collection: 'cars', doc: car.id }, propertiesToUpdate)
   }
 
   return (
