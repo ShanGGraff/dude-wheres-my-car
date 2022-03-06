@@ -19,10 +19,11 @@ Car.propTypes = {
   vin: PropTypes.string,
   license: PropTypes.string,
   // carimage: PropTypes.
+  date: PropTypes.string,
   location: PropTypes.string,
   id: PropTypes.string,
-  // formattedWaitTime: PropTypes.string,
-  whenTicketClicked: PropTypes.func
+  formattedWaitTime: PropTypes.string,
+  whenCarClicked: PropTypes.func
 };
 
 export default Car;

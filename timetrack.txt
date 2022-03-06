@@ -45,3 +45,7 @@
 
 #### Saturday, 3/5/2022
 9:30: 10:30 Trying to fix TypeError: Cannot destructure property error. Researching. Now working on a different issue with EditCarForm.
+
+#### Sunday, 3/6/2022
+9:00: 9:50 Error trying to write to firebase. Trying to find the bug. FirebaseError: Function addDoc() called with invalid data. Unsupported field value: a custom HTMLInputElement object (found in field model in document
+

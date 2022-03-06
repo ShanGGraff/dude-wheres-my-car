@@ -14,13 +14,13 @@ function StolenCarForm(props){
     return firestore.collection('cars').add(
       {
         make: event.target.make.value, 
-        model: event.target.model, 
+        model: event.target.model.value, 
         year: event.target.year.value, 
         vin: event.target.vin.value, 
-        license: event.target.license,
+        license: event.target.license.value,
         // carimage: event.target.carimage,
-        date: event.target.date,
-        location: event.target.location
+        date: event.target.date.value,
+        location: event.target.location.value
       }
     );
     //{
