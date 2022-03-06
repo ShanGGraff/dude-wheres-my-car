@@ -51,12 +51,10 @@ class CarControl extends React.Component {
     }
   }
 
-  handleAddingNewCarToList = (newCar) => {
+  handleAddingNewCarToList = () => {
     const { dispatch } = this.props;
-    const action = a.addCar(newCar)
+    const action = a.toggleForm();
     dispatch(action);
-    const action2 = a.toggleForm();
-    dispatch(action2);
   }
 
   handleChangingSelectedCar = (id) => {
@@ -68,15 +66,15 @@ class CarControl extends React.Component {
     this.setState({editing: true});
   }
 
-  handleEditingCarInList = (carToEdit) => {
-    const { dispatch } = this.props;
-    const action = a.addCar(carToEdit);
-    dispatch(action);
-    this.setState({
-      editing: false,
-      selectedCar: null
-    });
-  }
+  // handleEditingCarInList = (carToEdit) => {
+  //   const { dispatch } = this.props;
+  //   const action = a.addCar(carToEdit);
+  //   dispatch(action);
+  //   this.setState({
+  //     editing: false,
+  //     selectedCar: null
+  //   });
+  // }
 
   handleDeletingCar = (id) => {
     const { dispatch } = this.props;
