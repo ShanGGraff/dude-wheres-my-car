@@ -30,7 +30,7 @@ function CarList(props){
             // carimage={car.image}
             date={car.date}
             location={car.location}
-            formattedWaitTime={ticket.formattedWaitTime}
+            formattedWaitTime={car.formattedWaitTime}
             id={car.id}
             key={car.id}/>
         })}
