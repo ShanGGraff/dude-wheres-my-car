@@ -2,10 +2,7 @@ import React from "react";
 import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
-// import Header from './Header';
-// <header>
 
-// </header>
 function Signin(){
   function doSignIn(event) {
     event.preventDefault();
@@ -41,7 +38,6 @@ function Signin(){
         {' '}
         <Button variant="outlined" type='submit'>Sign in</Button>
       </form>
-      <hi>Sign Out</hi>
       <Button variant="outlined" onClick={doSignOut}>Sign out</Button>
     </React.Fragment>
   )
