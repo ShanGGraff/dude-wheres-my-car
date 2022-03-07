@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 import * as a from "./../actions";
 import EditCarForm from './EditCarForm';
 import StolenCarForm from './StolenCarForm';
-import { withFirestore } from 'react-redux-firebase';
+import { withFirestore, isLoaded } from 'react-redux-firebase';
 
 class CarControl extends React.Component {
 
@@ -93,6 +93,14 @@ class CarControl extends React.Component {
   render(){
     let currentlyVisibleState = null;
     let buttonText = null;
+    const auth = this.props.firebase.auth();
+    if (!isLoaded(auth)) {
+      return (
+        <React.Fragment>
+          <h1>Loading...</h1>
+        </React.Fragment>
+      )
+    }
     if (this.state.editing ) {      
       currentlyVisibleState = <EditCarForm car = {this.state.selectedCar} onEditCar = {this.handleEditingCarInList} />
       buttonText = "Return to Car List";
