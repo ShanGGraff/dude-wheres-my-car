@@ -52,3 +52,6 @@
 12:00: 1:00 Trying to get Routes and Route working with app.js. Reading tutorials on the subject.
 
 1:00- 2:00 Finally figuring out new syntax. Updated App.js
+
+#### Monday 3/7/2022
+6:00 - 6:30 Trying to figure add background image and resize with browser. 

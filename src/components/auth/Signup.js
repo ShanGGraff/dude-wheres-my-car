@@ -3,6 +3,7 @@ import car from '../../img/StolenCar.jpg';
 import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
+// import Image from 'react-image-resizer';
 
 
 function Signup(){
@@ -22,6 +23,26 @@ function Signup(){
           <div>
             <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
           </div>
+          {/* <div style={{ backgroundImage: `url(${car})`}}>
+          <form onSubmit={doSignUp}>
+            <input
+              type='text'
+              name='email'
+              placeholder='email' />
+            <input
+              type='password'
+              name='password'
+              placeholder='Password' />
+            <Button variant="outlined" type='submit'>Sign up</Button>
+          </form>
+          </div> */}
+          {/* <Image
+        source={car}
+        style={{
+          width: win.width,
+          height: 300 * ratio,
+        }}
+      /> */}
           <form onSubmit={doSignUp}>
             <input
               type='text'

@@ -1,58 +1,39 @@
-import React from 'react';
-
-import {
-  Box,
-  Container,
-  Row,
-  Column,
-  FooterLink,
-  Heading,
-} from "./FooterStyles";
-
-const Footer = () => (
-  <footer className="footer">
-    <p>Dude footer</p>
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
   
-  </footer>
-);
+export default function Footer() {
+  return (
+      <AppBar position="static">
+        <Toolbar>
+          {/*Inside the IconButton, we 
+           can render various icons*/}
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            {/*This is a simple Menu 
+             Icon wrapped in Icon */}
+            <MenuIcon />
+          </IconButton>
+          {/* The Typography component applies 
+           default font weights and sizes */}
   
-export default Footer;
-  
-// const Footer = () => {
-//   return (
-//     <Box>
-//       <h1 style={{ color: "white", 
-//         textAlign: "center", 
-//         marginTop: "-50px" }}>
-//         A resource for finding your missing car in Portland Oregon.
-//       </h1>
-//       <Container>
-//         <Row>
-//           <Column>
-//             <Heading>Other Resources</Heading>
-//             <FooterLink href="#">TBD</FooterLink>
-//           </Column>
-//           <Column>
-//             <Heading>Services</Heading>
-//             <FooterLink href="#">TBD</FooterLink>
-//           </Column>
-//           <Column>
-//             <Heading>Contact Us</Heading>
-//             <FooterLink href="#">Portland</FooterLink>
-//           </Column>
-//           <Column>
-//             <Heading>Social Media</Heading>
-//             <FooterLink href="#">
-//               <i className="ShaneDude">
-//                 <span style={{ marginLeft: "10px" }}>
-//                   LinkedIn
-//                 </span>
-//               </i>
-//             </FooterLink>
-//           </Column>
-//         </Row>
-//       </Container>
-//     </Box>
-//   );
-// };
-// export default Footer;
+          <Typography variant="h6" 
+            component="div" sx={{ flexGrow: 1 }}>
+            Dude Where's My Car? Where's my footer?
+          </Typography>
+          <Link to="/signin"><Button color="inherit">Login</Button></Link>
+        </Toolbar>
+      </AppBar>
+  );
+}

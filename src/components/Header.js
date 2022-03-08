@@ -8,52 +8,52 @@ import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
   
-// export default function Header() {
-//   return (
-//       <AppBar position="static">
-//         <Toolbar>
-//           {/*Inside the IconButton, we 
-//            can render various icons*/}
-//           <IconButton
-//             size="large"
-//             edge="start"
-//             color="inherit"
-//             aria-label="menu"
-//             sx={{ mr: 2 }}
-//           >
-//             {/*This is a simple Menu 
-//              Icon wrapped in Icon */}
-//             <MenuIcon />
-//           </IconButton>
-//           {/* The Typography component applies 
-//            default font weights and sizes */}
-  
-//           <Typography variant="h6" 
-//             component="div" sx={{ flexGrow: 1 }}>
-//             Dude Where's My Car?
-//           </Typography>
-//           <Link to="/signin"><Button color="inherit">Login</Button></Link>
-//         </Toolbar>
-//       </AppBar>
-//   );
-// }
-
-// import React from "react";
-
-function Header(){
+export default function Header() {
   return (
-    <React.Fragment>
-    <h1>Dude, where's my car</h1>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/signin">Sign In</Link>
-      </li>
-    </ul>
-    </React.Fragment>
+      <AppBar position="static">
+        <Toolbar>
+          {/*Inside the IconButton, we 
+           can render various icons*/}
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+            {/*This is a simple Menu 
+             Icon wrapped in Icon */}
+            <MenuIcon />
+          </IconButton>
+          {/* The Typography component applies 
+           default font weights and sizes */}
+  
+          <Typography variant="h6" 
+            component="div" sx={{ flexGrow: 1 }}>
+            Dude, Where's My Car?
+          </Typography>
+          <Link to="/signin"><Button color="inherit">Login</Button></Link>
+        </Toolbar>
+      </AppBar>
   );
 }
 
-export default Header;
+// import React from "react";
+
+// function Header(){
+//   return (
+//     <React.Fragment>
+//     <h1>Dude, where's my car</h1>
+//     <ul>
+//       <li>
+//         <Link to="/">Home</Link>
+//       </li>
+//       <li>
+//         <Link to="/signin">Sign In</Link>
+//       </li>
+//     </ul>
+//     </React.Fragment>
+//   );
+// }
+
+// export default Header;
