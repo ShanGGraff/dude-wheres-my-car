@@ -3,6 +3,7 @@ import car from '../../img/StolenCar.jpg';
 import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
+import Header from "./../Header";
 // import Image from 'react-image-resizer';
 
 
@@ -20,29 +21,18 @@ function Signup(){
 
     return(
         <React.Fragment>
-          <div>
+          <body>
             <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
-          </div>
-          {/* <div style={{ backgroundImage: `url(${car})`}}>
-          <form onSubmit={doSignUp}>
-            <input
-              type='text'
-              name='email'
-              placeholder='email' />
-            <input
-              type='password'
-              name='password'
-              placeholder='Password' />
-            <Button variant="outlined" type='submit'>Sign up</Button>
-          </form>
+          </body>
+          {/* <div style={{ backgroundImage:`url(${car})`,backgroundRepeat:"no-repeat",
+          width:'auto', height:'auto' }}>
           </div> */}
-          {/* <Image
-        source={car}
-        style={{
-          width: win.width,
-          height: 300 * ratio,
-        }}
-      /> */}
+          
+          {/* <div style={{ backgroundImage:`url(${car})`,backgroundRepeat:"no-repeat",backgroundSize:"contain", 
+          height:1000,width:1000
+          }}>
+          </div> */}
+
           <form onSubmit={doSignUp}>
             <input
               type='text'
@@ -54,6 +44,7 @@ function Signup(){
               placeholder='Password' />
             <Button variant="outlined" type='submit'>Sign up</Button>
           </form>
+          
         </React.Fragment>
     )
 }

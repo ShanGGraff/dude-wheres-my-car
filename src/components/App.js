@@ -22,14 +22,14 @@ function App(){
     // </React.Fragment>
 
   <Router>
-    <Header />
+    {/* <Header /> */}
       <Routes>
         <Route path="/signin" element={<Signin />} />
         <Route path="/" element={<CarControl />} />
         <Route path="/signup" element={<Signup />} />
         {/* <Route path='/user-profile' render={() => ( this.state.isLoggedIn ? <UserProfile /> : <Redirect to="/Signin" /> )}/> */}
       </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </Router>
   );
 }
