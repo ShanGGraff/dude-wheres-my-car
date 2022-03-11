@@ -25,10 +25,10 @@ function ReusableForm(props) {
           type='text'
           name='license'
           placeholder='License Number'/>
-        {/* <input
-          type='image'
+        <input
+          type='file'
           name='carimage'
-          placeholder='Car image' /> */}
+          placeholder='Car image' />
         <input
           type='date'
           name='date'

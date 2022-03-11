@@ -18,7 +18,7 @@ function StolenCarForm(props){
         year: event.target.year.value, 
         vin: event.target.vin.value, 
         license: event.target.license.value,
-        // carimage: event.target.carimage,
+        carimage: event.target.carimage,
         date: event.target.date.value,
         location: event.target.location.value
       }
