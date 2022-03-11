@@ -58,3 +58,7 @@
 
 #### Tuesday 3/8/2022
 * Class. Still stuck on resizing background image. Researching grid layout for car list. Trying to figure out changing header depending on whether one is signed-in or not.
+
+#### Friday 3/11/2022
+* 9:00 - 9:40 Added Proptype for uploading image. Putting weird path in firebase. Reading tutorial on getting it to work.
+* 9:40 Working on Splashpage

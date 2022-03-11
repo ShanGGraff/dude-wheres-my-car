@@ -7,25 +7,15 @@ import Footer from "./Footer";
 // import Main from "./Main";
 import Signin from "./auth/Signin";
 import CarControl from "./CarControl";
+import Splash from "./Splash";
 
 function App(){
   return (
-    // <Router>
-    // <Header />
-    //   <Route path="/signup" element={<Signup/>} />
-    // </Router>
-
-    // <React.Fragment>
-    //   <Header />
-    //   {/* <Signup /> */}
-    //   <Footer />
-    // </React.Fragment>
-
   <Router>
     {/* <Header /> */}
       <Routes>
         <Route path="/signin" element={<Signin />} />
-        <Route path="/" element={<CarControl />} />
+        <Route path="/" element={<Splash />} />
         <Route path="/signup" element={<Signup />} />
         {/* <Route path='/user-profile' render={() => ( this.state.isLoggedIn ? <UserProfile /> : <Redirect to="/Signin" /> )}/> */}
       </Routes>

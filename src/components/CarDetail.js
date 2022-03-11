@@ -7,12 +7,12 @@ function CarDetail(props){
   return (
     <React.Fragment>
       <h1>Car Detail</h1>
+      {car.carimage}
       <h3>{car.make}</h3>
       <h3>{car.model}</h3>
       <h3>{car.year}</h3>
       <h3>{car.vin}</h3>
       <h3>{car.license}</h3>
-      <h3>{car.image}</h3>
       <h3>{car.date}</h3>
       <h3>{car.location}</h3>
       <button onClick={ props.onClickingEdit }>Update Car</button>

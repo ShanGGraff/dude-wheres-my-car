@@ -18,7 +18,7 @@ Car.propTypes = {
   year: PropTypes.string,
   vin: PropTypes.string,
   license: PropTypes.string,
-  // carimage: PropTypes.
+  carimage: PropTypes.instanceOf(File),
   date: PropTypes.string,
   location: PropTypes.string,
   id: PropTypes.string,
