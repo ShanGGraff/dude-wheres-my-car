@@ -60,12 +60,15 @@ class CarControl extends React.Component {
   handleChangingSelectedCar = (id) => {
     this.props.firestore.get({collection: 'cars', doc: id}).then((car) => {
       const firestoreCar = {
+        // carimage: car.get("carimage"),
         make: car.get("make"),
         model: car.get("model"),
+        // stolen: car.get("stolen"),
+        // color: car.get("color"),
+        lost: car.get("lost"),
         year: car.get("year"),
         vin: car.get("vin"),
         license: car.get("license"),
-        // carimage: car.get("carimage"),
         date: car.get("date"),
         location: car.get("location"),
         id: car.id

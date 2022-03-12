@@ -14,10 +14,10 @@ function Car(props){
 
 Car.propTypes = {
   // carimage: PropTypes.instanceOf(File),
-  // stolen: PropTypes.string,
   make: PropTypes.string,
   model: PropTypes.string,
-  color: PropTypes.string,
+  // stolen: PropTypes.string,
+  // color: PropTypes.string,
   year: PropTypes.string,
   vin: PropTypes.string,
   license: PropTypes.string,

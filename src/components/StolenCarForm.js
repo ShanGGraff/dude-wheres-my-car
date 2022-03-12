@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 import { useFirestore } from 'react-redux-firebase';
+import Header from "./Header";
 
 function StolenCarForm(props){
   const firestore = useFirestore();
@@ -15,7 +16,7 @@ function StolenCarForm(props){
         // stolen: event.target.stolen.value,
         make: event.target.make.value, 
         model: event.target.model.value,
-        color: event.target.color.value,
+        // color: event.target.color.value,
         year: event.target.year.value, 
         vin: event.target.vin.value, 
         license: event.target.license.value,
@@ -27,6 +28,7 @@ function StolenCarForm(props){
 
   return (
     <React.Fragment>
+      <Header />
       <ReusableForm 
         formSubmissionHandler={handleStolenCarFormSubmission}
         buttonText="Submit!" />

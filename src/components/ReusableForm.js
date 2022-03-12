@@ -8,11 +8,7 @@ function ReusableForm(props) {
         {/* <input
           type='file'
           name='carimage'
-          placeholder='Car image' />
-        <input
-          type='text'
-          name='stolen'
-          placeholder="Lost or Stolen" /> */}
+          placeholder='Car image' /> */}
         <input
           type='text'
           name='make'
@@ -21,10 +17,14 @@ function ReusableForm(props) {
           type='text'
           name='model'
           placeholder='Car Model' />
-        <input
+        {/* <input
+          type='text'
+          name='stolen'
+          placeholder="Lost or Stolen?" /> */}
+        {/* <input
           type='text'
           name='color'
-          placeholder='Car Color' />
+          placeholder='Car Color' /> */}
         <input
           type='text'
           name='year'

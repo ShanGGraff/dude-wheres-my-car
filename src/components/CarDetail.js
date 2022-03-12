@@ -7,7 +7,7 @@ function CarDetail(props){
   return (
     <React.Fragment>
       <h1>Car Detail</h1>
-      {car.carimage}
+      {/* {car.carimage} */}
       <h3>{car.make}</h3>
       <h3>{car.model}</h3>
       <h3>{car.year}</h3>
