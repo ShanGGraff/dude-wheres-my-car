@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 import { useFirestore } from 'react-redux-firebase';
-import Header from "./Header";
 
 function StolenCarForm(props){
   const firestore = useFirestore();
@@ -28,7 +27,6 @@ function StolenCarForm(props){
 
   return (
     <React.Fragment>
-      <Header />
       <ReusableForm 
         formSubmissionHandler={handleStolenCarFormSubmission}
         buttonText="Submit!" />
