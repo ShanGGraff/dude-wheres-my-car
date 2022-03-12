@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Signup from "./auth/Signup";
 import Signin from "./auth/Signin";
 import Splash from "./Splash";
+import CarList from "./CarList";
 
 function App(){
   return (
@@ -11,6 +12,7 @@ function App(){
       <Routes>
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/carlist" element={<CarList />} />
         <Route path="/" element={<Splash />} />
         {/* <Route path='/user-profile' render={() => ( this.state.isLoggedIn ? <UserProfile /> : <Redirect to="/Signin" /> )}/> */}
       </Routes>

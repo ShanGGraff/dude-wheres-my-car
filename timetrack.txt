@@ -64,4 +64,4 @@
 * 9:40 - 10:30 Working on Splashpage
 
 #### Saturday 3/12/2022
-* 7:00 - Trying to get redirect to work. Splashpage. 
+* 7:00 - 10:00 Trying to get redirect to work. Splashpage. Adding new fields to the forms. Code cleanup.

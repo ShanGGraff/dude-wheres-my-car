@@ -11,8 +11,11 @@ function StolenCarForm(props){
     props.onNewCarCreation();
     return firestore.collection('cars').add(
       {
+        carimage: event.target.carimage.value,
+        stolen: event.target.stolen.value,
         make: event.target.make.value, 
-        model: event.target.model.value, 
+        model: event.target.model.value,
+        color: event.target.model.value,
         year: event.target.year.value, 
         vin: event.target.vin.value, 
         license: event.target.license.value,

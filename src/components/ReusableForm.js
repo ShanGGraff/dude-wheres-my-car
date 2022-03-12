@@ -23,6 +23,10 @@ function ReusableForm(props) {
           placeholder='Car Model' />
         <input
           type='text'
+          name='color'
+          placeholder='Car Color' />
+        <input
+          type='text'
           name='year'
           placeholder='Car Year' />
         <input
