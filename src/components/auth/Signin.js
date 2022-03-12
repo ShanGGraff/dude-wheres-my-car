@@ -2,6 +2,8 @@ import React from "react";
 import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
+import Footer from "./../Footer";
+
 
 function Signin(){
   function doSignIn(event) {
@@ -39,6 +41,7 @@ function Signin(){
         <Button variant="outlined" type='submit'>Sign in</Button>
       </form>
       <Button variant="outlined" onClick={doSignOut}>Sign out</Button>
+      <Footer />
     </React.Fragment>
   )
 }

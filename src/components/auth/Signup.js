@@ -27,8 +27,7 @@ function Signup(){
             height: "100vh",
             color: "#f5f5f5"
             }}>
-          </div>
-
+          
           <form onSubmit={doSignUp}>
             <input
               type='text'
@@ -38,8 +37,10 @@ function Signup(){
               type='password'
               name='password'
               placeholder='Password' />
-            <Button variant="outlined" type='submit'>Sign up</Button>
+            <Button variant="outlined" type='submit'>Submit!</Button>
           </form>
+          
+          </div>
           <Footer />
         </React.Fragment>
     )

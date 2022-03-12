@@ -6,6 +6,14 @@ function ReusableForm(props) {
     <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <input
+          type='file'
+          name='carimage'
+          placeholder='Car image' />
+        <input
+          type='text'
+          name='stolen'
+          placeholder="Lost or Stolen" />
+        <input
           type='text'
           name='make'
           placeholder='Car Make' />
@@ -25,10 +33,6 @@ function ReusableForm(props) {
           type='text'
           name='license'
           placeholder='License Number'/>
-        <input
-          type='file'
-          name='carimage'
-          placeholder='Car image' />
         <input
           type='date'
           name='date'

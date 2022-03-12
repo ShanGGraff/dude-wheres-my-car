@@ -32,7 +32,7 @@ export default function Footer() {
             component="div" sx={{ flexGrow: 1 }}>
             Dude Where's My Car? Where's my footer?
           </Typography>
-          <Link to="/signin"><Button color="inherit">Login</Button></Link>
+          <Link to="/"><Button color="inherit">Home</Button></Link>
         </Toolbar>
       </AppBar>
   );
