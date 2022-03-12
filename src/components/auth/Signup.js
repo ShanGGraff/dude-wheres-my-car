@@ -4,6 +4,7 @@ import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
 import Header from "./../Header";
+import burningcar from '../../img/burning-car.jpg';
 // import Image from 'react-image-resizer';
 
 
@@ -21,17 +22,14 @@ function Signup(){
 
     return(
         <React.Fragment>
-          <body>
-            <img src={car} alt="picture of stolen car and police officer in Portland Oregon" />
-          </body>
-          {/* <div style={{ backgroundImage:`url(${car})`,backgroundRepeat:"no-repeat",
-          width:'auto', height:'auto' }}>
-          </div> */}
+          <div>
+            <img src={burningcar} alt="Burning Car" />
+          </div>
           
           {/* <div style={{ backgroundImage:`url(${car})`,backgroundRepeat:"no-repeat",backgroundSize:"contain", 
-          height:1000,width:1000
-          }}>
-          </div> */}
+          // height:1000,width:1000
+          // }}>
+          // </div> */}
 
           <form onSubmit={doSignUp}>
             <input

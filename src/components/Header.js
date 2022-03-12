@@ -13,7 +13,7 @@ export default function Header() {
       <AppBar position="static">
         <Toolbar>
           {/*Inside the IconButton, we 
-           can render various icons*/}
+          can render various icons*/}
           <IconButton
             size="large"
             edge="start"
@@ -32,28 +32,9 @@ export default function Header() {
             component="div" sx={{ flexGrow: 1 }}>
             Dude, Where's My Car?
           </Typography>
-          <Link to="/signin"><Button color="inherit">Login</Button></Link>
+          <Link to="/signin"><Button color="inherit">Signin</Button></Link>
+          <Link to="/signup"><Button color="inherit">Signup</Button></Link>
         </Toolbar>
       </AppBar>
   );
 }
-
-// import React from "react";
-
-// function Header(){
-//   return (
-//     <React.Fragment>
-//     <h1>Dude, where's my car</h1>
-//     <ul>
-//       <li>
-//         <Link to="/">Home</Link>
-//       </li>
-//       <li>
-//         <Link to="/signin">Sign In</Link>
-//       </li>
-//     </ul>
-//     </React.Fragment>
-//   );
-// }
-
-// export default Header;

@@ -61,4 +61,7 @@
 
 #### Friday 3/11/2022
 * 9:00 - 9:40 Added Proptype for uploading image. Putting weird path in firebase. Reading tutorial on getting it to work.
-* 9:40 Working on Splashpage
+* 9:40 - 10:30 Working on Splashpage
+
+#### Saturday 3/12/2022
+* 7:00 - Trying to get redirect to work. Splashpage. 
