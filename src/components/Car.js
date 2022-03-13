@@ -1,13 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Crashed from "../img/crashedcar.jpg";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function Car(props){
   return (
     <React.Fragment>
+      <Header />
       <div onClick = {() => props.whenCarClicked(props.id)}>
         <h3>{props.make}</h3>
       </div>
       <hr/>
+      <Footer />
     </React.Fragment>
   );
 }

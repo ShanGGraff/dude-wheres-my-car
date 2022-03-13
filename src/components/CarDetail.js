@@ -6,11 +6,13 @@ function CarDetail(props){
   
   return (
     <React.Fragment>
-      <h1>Car Detail</h1>
       {/* {car.carimage} */}
-      <h3>{car.make}</h3>
-      <h3>{car.model}</h3>
-      <h3>{car.year}</h3>
+      <b>Car Make: </b> {car.make}
+      <br />
+      <b>Car Model: </b> {car.model}
+      <br />
+      <b>Year of Vehicle: </b> {car.year}
+      <br />
       <h3>{car.vin}</h3>
       <h3>{car.license}</h3>
       <h3>{car.date}</h3>

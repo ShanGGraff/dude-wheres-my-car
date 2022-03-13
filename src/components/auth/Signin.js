@@ -3,7 +3,8 @@ import firebase from "firebase/app";
 import 'firebase/database';
 import Button from '@mui/material/Button';
 import Footer from "./../Footer";
-
+import Header from "./../Header";
+import CrashedCar from '../../img/crashedcar.jpg';
 
 function Signin(){
   function doSignIn(event) {
@@ -27,6 +28,13 @@ function Signin(){
 
   return(
     <React.Fragment>
+      <Header />
+      <div style={{
+            backgroundImage: `url(${CrashedCar})`,
+            backgroundSize: "cover",
+            height: "100vh",
+            color: "#f5f5f5"
+            }}>
       <form onSubmit={doSignIn}>
         <input
           type='text'
@@ -41,6 +49,7 @@ function Signin(){
         <Button variant="outlined" type='submit'>Sign in</Button>
       </form>
       <Button variant="outlined" onClick={doSignOut}>Sign out</Button>
+      </div>
       <Footer />
     </React.Fragment>
   )

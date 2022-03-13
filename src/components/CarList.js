@@ -3,18 +3,16 @@ import PropTypes from "prop-types";
 import Car from "./Car";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase';
+import CrashedCar from "../img/crashedcar.jpg";
 
 
 function CarList(props){
-  // The useFirestoreConnect() hook comes from react-redux-firebase.
   useFirestoreConnect([
     { collection: 'cars' }
   ]);
 
-  // The useSelector() hook comes from react-redux.
   const cars = useSelector(state => state.firestore.ordered.cars);
 
-  // react-redux-firebase also offers a useful isLoaded() function.
   if (isLoaded(cars)) {
     return (
       <React.Fragment>
@@ -36,7 +34,6 @@ function CarList(props){
         })}
       </React.Fragment>
     );
-  // If the tickets aren't loaded yet, our fragment will return a "Loading..." message.
   } else {
     return (
       <React.Fragment>
@@ -47,8 +44,6 @@ function CarList(props){
 }
 
 CarList.propTypes = {
-  // We no longer need ticketList props.
-  // ticketList: PropTypes.object,
   onCarSelection: PropTypes.func
 };
 
