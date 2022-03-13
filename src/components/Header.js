@@ -34,6 +34,7 @@ export default function Header() {
           </Typography>
           <Link to="/signin"><Button color="inherit">Signin</Button></Link>
           <Link to="/signup"><Button color="inherit">Signup</Button></Link>
+          <Link to="/carcontrol"><Button color="inherit">ListOfCars</Button></Link>
         </Toolbar>
       </AppBar>
   );

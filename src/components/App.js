@@ -6,6 +6,7 @@ import Splash from "./Splash";
 import CarList from "./CarList";
 import CarDetail from "./CarDetail";
 import StolenCarForm from "./StolenCarForm";
+import CarControl from "./CarControl";
 
 function App(){
   return (
@@ -16,6 +17,7 @@ function App(){
         <Route path="/carlist" element={<CarList />} />
         <Route path="/cardetail" element={<CarDetail />} />
         <Route path="/stolencarform" element={<StolenCarForm />} />
+        <Route path="/carcontrol" element={<CarControl />} />
         <Route path="/" element={<Splash />} />
         
         {/* <Route path='/user-profile' render={() => ( this.state.isLoggedIn ? <UserProfile /> : <Redirect to="/Signin" /> )}/> */}
