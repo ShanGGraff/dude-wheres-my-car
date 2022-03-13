@@ -18,8 +18,15 @@ function CarList(props){
   if (isLoaded(cars)) {
     return (
       <React.Fragment>
-        <Header />
         <hr/>
+        <Header />
+        <div style={{
+            backgroundImage: `url(${CrashedCar})`,
+            backgroundSize: "cover",
+            height: "100vh",
+            color: "#f5f5f5"
+            }}>
+        
         {cars.map((car) => {
           return <Car
             whenCarClicked = { props.onCarSelection }
@@ -35,7 +42,8 @@ function CarList(props){
             id={car.id}
             key={car.id}/>
         })}
-        <Footer />
+        </div>
+        <Footer/>
       </React.Fragment>
     );
   } else {
