@@ -7,16 +7,21 @@ function CarDetail(props){
   return (
     <React.Fragment>
       {/* {car.carimage} */}
-      <b>Car Make: </b> {car.make}
+      <b>Car Make: </b>{car.make}
       <br />
-      <b>Car Model: </b> {car.model}
+      <b>Car Model: </b>{car.model}
       <br />
-      <b>Year of Vehicle: </b> {car.year}
+      <b>Year of Vehicle: </b>{car.year}
       <br />
-      <h3>{car.vin}</h3>
-      <h3>{car.license}</h3>
-      <h3>{car.date}</h3>
-      <h3>{car.location}</h3>
+      <b>Vin Number: </b>{car.vin}
+      <br />
+      <b>License Number: </b>{car.license}
+      <br />
+      <b>Date car was found or went missing: </b>{car.date}
+      <br />
+      <b>Location car was stolen from or found: </b>{car.location}
+      <br />
+      <br />
       <button onClick={ props.onClickingEdit }>Update Car</button>
       <button onClick={()=> onClickingDelete(car.id) }>Delete car</button>
       <hr/>
