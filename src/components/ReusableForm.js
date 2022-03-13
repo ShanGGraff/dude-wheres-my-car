@@ -20,7 +20,7 @@ function ReusableForm(props) {
         {/* <input
           type='text'
           name='stolen'
-          placeholder="Lost or Stolen?" /> */}
+          placeholder="Stolen or Found?" /> */}
         {/* <input
           type='text'
           name='color'

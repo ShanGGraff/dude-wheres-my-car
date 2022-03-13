@@ -2,6 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import ReusableForm from "./ReusableForm";
 import { useFirestore } from 'react-redux-firebase';
+import Header from "./Header";
+import Footer from "./Footer";
+import dudecar from '../img/dudecar.jpg'
 
 function StolenCarForm(props){
   const firestore = useFirestore();
@@ -27,9 +30,18 @@ function StolenCarForm(props){
 
   return (
     <React.Fragment>
-      <ReusableForm 
-        formSubmissionHandler={handleStolenCarFormSubmission}
-        buttonText="Submit!" />
+      <Header />
+        <div style={{
+          backgroundImage: `url(${dudecar})`,
+          backgroundSize: "cover",
+          height: "100vh",
+          color: "#f5f5f5"
+          }}>
+        <ReusableForm
+          formSubmissionHandler={handleStolenCarFormSubmission}
+          buttonText="Submit!" />
+        </div>
+      <Footer />
     </React.Fragment>
   );
 }
