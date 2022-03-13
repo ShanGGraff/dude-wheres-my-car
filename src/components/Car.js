@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Crashed from "../img/crashedcar.jpg";
 
 function Car(props){
   return (

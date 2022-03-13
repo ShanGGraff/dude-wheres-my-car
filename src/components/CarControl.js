@@ -7,7 +7,7 @@ import * as a from "./../actions";
 import EditCarForm from './EditCarForm';
 import StolenCarForm from './StolenCarForm';
 import { withFirestore, isLoaded } from 'react-redux-firebase';
-import Header from './Header';
+// import Header from './Header';
 
 class CarControl extends React.Component {
   constructor(props) {

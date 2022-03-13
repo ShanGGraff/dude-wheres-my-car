@@ -47,15 +47,15 @@
 ----------------------------
 
 ## Features to add<a id="features"></a>
-* Redirect to signup page if user tries to signin but has no account
-* Redirect to signin page if user tries to add a car or edit an existing car
+* Redirect to sign up page if user tries to signin but has no account
+* Redirect to sign in page if user tries to add a car or edit an existing car
 * Add an admin account that can add, edit, and delete all cars
 * Add authentication so that a signed-in user, other than the admin, can delete or edit only their entry
 * Add a way for users to contact each other if they have any info regarding the missing or found car
 * Add the ability to upload pictures of the cars to firebase
 * Add more styling to all the pages
 * Add external resource info on the footer
-* Change the CarList page so it can diplay multiple cars in rows of four and columns of four
+* Change the CarList page so it can display multiple cars in rows of four and columns of four
 
 ## Buglist <a id="bugs"></a>
 * No known issues

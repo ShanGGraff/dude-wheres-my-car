@@ -25,7 +25,7 @@
 ## If I finish developing the MVP with time to spare, I would like to try some of the following:
 
 * Add map using Google maps for location of car
-* Looks like there may be a stolen car API on the Portland Police department website, but it appears to be broken. We need to look into further
+* Looks like there may be a stolen car API on the Portland Police department website, but it appears to be broken. Will need to look into further.
 * A real far off stretch goal would be intergrationg Paypal to pay an award for the found vehicle if one had been offered
 
 ## for the stretch goals would need to use:
