@@ -4,6 +4,8 @@ import Car from "./Car";
 import { useSelector } from 'react-redux';
 import { useFirestoreConnect, isLoaded } from 'react-redux-firebase';
 import CrashedCar from "../img/crashedcar.jpg";
+import Header from "./Header";
+import Footer from "./Footer";
 
 
 function CarList(props){
@@ -16,6 +18,7 @@ function CarList(props){
   if (isLoaded(cars)) {
     return (
       <React.Fragment>
+        <Header />
         <hr/>
         {cars.map((car) => {
           return <Car
@@ -32,6 +35,7 @@ function CarList(props){
             id={car.id}
             key={car.id}/>
         })}
+        <Footer />
       </React.Fragment>
     );
   } else {
