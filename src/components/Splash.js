@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer"
-import car from '../img/StolenCar.jpg';
+import car from '../img/StolenCarSplash.jpg';
 
 
 function App(){
