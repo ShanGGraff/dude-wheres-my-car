@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Header from "./Header";
 
 function CarDetail(props){
   const { car, onClickingDelete } = props;
   
   return (
     <React.Fragment>
+      <Header />
       {/* {car.carimage} */}
       <b>Car Make: </b>{car.make}
       <br />

@@ -67,3 +67,6 @@
 * 7:00 - 10:00 Trying to get redirect to work. Splashpage. Adding new fields to the forms. Code cleanup.
 * 11:00-2:00: Stuck on figuring out new error with StolenCarForm. Was working, can't figure out why it isn't now.
 * 3:00-5:30: Looking through main version to see if I can find the issue.
+
+#### Sunday 3/13/2022
+* 9:30 - Write presentation for capstone

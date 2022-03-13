@@ -55,7 +55,7 @@
 * Add the ability to upload pictures of the cars to firebase
 * Add more styling to all the pages
 * Add external resource info on the footer
-* Change the CarList page so it can diplay multiple cars in rows and columns of three
+* Change the CarList page so it can diplay multiple cars in rows of four and columns of four
 
 ## Buglist <a id="bugs"></a>
 * No known issues
