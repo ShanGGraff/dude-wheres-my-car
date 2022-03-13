@@ -1,6 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Header from "./Header";
+import Footer from "./Footer";
+import Window from "../img/window.jpeg"
 
 function CarDetail(props){
   const { car, onClickingDelete } = props;
@@ -8,6 +10,12 @@ function CarDetail(props){
   return (
     <React.Fragment>
       <Header />
+      <div style={{
+            backgroundImage: `url(${Window})`,
+            backgroundSize: "cover",
+            height: "100vh",
+            color: "#f5f5f5"
+            }}>
       {/* {car.carimage} */}
       <b>Car Make: </b>{car.make}
       <br />
@@ -27,6 +35,8 @@ function CarDetail(props){
       <button onClick={ props.onClickingEdit }>Update Car</button>
       <button onClick={()=> onClickingDelete(car.id) }>Delete car</button>
       <hr/>
+      </div>
+      <Footer />
     </React.Fragment>
   );
 }
